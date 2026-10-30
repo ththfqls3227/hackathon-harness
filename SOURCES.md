@@ -12,5 +12,6 @@
 | [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 일관된 시각 규칙과 접근성 검토 | [커밋](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/28b3b8dee8c976df4fa3e94aed4e092ad43fcb03), MIT | 자체 작성 ui-review. 원본 디자인 데이터·검색기·CLI 없음 |
 | [Anatomy](https://github.com/wheresryan22/anatomy) | 구조와 관계를 설명하는 SVG/HTML 도해 | [커밋](https://github.com/wheresryan22/anatomy/tree/1482e8469b0a9e0d8cc18ea2740a01423d29ae80), MIT | 자체 작성 system-diagram. 원본 도해 키트·에셋·Chrome 도구 없음 |
 | [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 로컬 자료의 범위를 정하고 데이터 품질 확인 | [고정 EDA 참조](https://github.com/K-Dense-AI/scientific-agent-skills/tree/5f2bc0341354fd5590aef76a533ada1e1e5b4e62/skills/exploratory-data-analysis), 저장소 MIT | 자체 작성 CSV 구조·결측 점검기. 원본 EDA 스크립트·과학 라이브러리·클라우드 연동 없음 |
+| [CodexClaw](https://github.com/lidge-jun/codexclaw) | 작업 크기에 맞는 계획 검토, 조건부 동작 증거, 중단 후 재개 | [0.2.45 커밋](https://github.com/lidge-jun/codexclaw/tree/a7ff3b6b1e8221dc9be4f665f26b50270854b951), MIT 및 별도 구성 요소 고지 | 기존 task-flow·task-verify·검토 역할·근거 양식의 자체 작성 지침. [파일별 반영 근거](docs/codexclaw-review.md). 플러그인·hooks·원본 코드·개인 대화 검색 없음 |
 
 저장소 이름이나 스타 수는 성능·규정 적합성·공식 보증의 근거가 아니다. 실제 사용 환경과 해당 과제 안내를 먼저 확인한다. 공개 자료를 추가로 복사하는 변경에서는 파일별 라이선스와 필요한 저작권 고지를 별도로 검토해야 한다.

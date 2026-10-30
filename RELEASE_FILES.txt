@@ -16,6 +16,7 @@ roles/builder.md
 roles/reviewer.md
 templates/work-evidence.md
 docs/design.md
+docs/codexclaw-review.md
 docs/validation.md
 scripts/check_package.py
 tests/scenarios.md

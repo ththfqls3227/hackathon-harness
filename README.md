@@ -15,7 +15,7 @@
 과제 작업 폴더에서 공개 저장소 다운로드가 허용되는 경우:
 
 ```sh
-git clone --depth 1 --branch v0.1.0 https://github.com/ththfqls3227/hackathon-harness.git tools/hackathon-harness
+git clone --depth 1 --branch v0.2.0 https://github.com/ththfqls3227/hackathon-harness.git tools/hackathon-harness
 ```
 
 같은 이름의 폴더가 이미 있으면 내용을 덮어쓰지 않고 기존 자료를 먼저 확인합니다. 태그로 버전을 고정하며 시험 중 최신 버전으로 자동 업데이트하지 않습니다.
@@ -44,6 +44,8 @@ git clone --depth 1 --branch v0.1.0 https://github.com/ththfqls3227/hackathon-ha
 | [검증 기록](docs/validation.md) | 확인한 범위와 아직 확인하지 않은 것 |
 
 역할 카드는 사람이 읽거나 지원되는 에이전트에 전달하는 지침입니다. 파일이 존재한다고 subagent가 생성되거나 특정 모델로 실행되는 것은 아닙니다. 기본은 하나의 Codex가 순서대로 진행하는 방식입니다.
+
+v0.2.0은 CodexClaw에서 참고한 계획·사전 검토·구현·검증·정리 흐름, 조건부 경로의 실행 확인, 과제 안의 기록을 이용한 재개를 기존 스킬에 반영했습니다. 작은 수정에는 전체 절차를 강제하지 않습니다. [반영 범위와 제외 이유](docs/codexclaw-review.md)를 확인하세요. CodexClaw 플러그인 설치나 자동 상태 전환 기능은 포함하지 않습니다.
 
 ## 선택 기능 사용
 

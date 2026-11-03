@@ -2,11 +2,13 @@
 AGENTS.md
 LICENSE
 README.md
+START.md
 RELEASE_FILES.txt
 SOURCES.md
 .agents/skills/task-scope/SKILL.md
 .agents/skills/task-flow/SKILL.md
 .agents/skills/task-verify/SKILL.md
+.agents/skills/web-verify/SKILL.md
 .agents/skills/data-check/SKILL.md
 .agents/skills/data-check/profile_csv.py
 .agents/skills/ui-review/SKILL.md
@@ -20,9 +22,11 @@ docs/exam-contract.md
 docs/codexclaw-review.md
 docs/validation.md
 scripts/check_package.py
+scripts/setup_project.py
 tests/scenarios.md
 tests/with-skill-response.md
 tests/baseline-response.md
 tests/test_csv_profile.py
+tests/test_project_setup.py
 tests/fixtures/inventory/README.md
 tests/fixtures/inventory/items.csv

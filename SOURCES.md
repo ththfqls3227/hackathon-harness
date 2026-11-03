@@ -8,6 +8,10 @@
 
 v0.3.1은 개인별 접속 안내 메일의 모델 권장값·업데이트 금지·준비 및 감독 조건·공개 자료 기준·장애 신고 절차를 반영했다. 메일과 기존 가이드 3종이 충돌하는 항목만 메일을 우선하며 나머지 제한은 유지한다. 당일 09:40 추가 공지의 내용까지 확인했다는 뜻은 아니다. 개인 접속 링크나 메일 원문을 공개 출처 링크로 싣지 않는다.
 
+v0.4.0의 재시험·공개 clone·자체 웹 Playwright 검증 기준은 **2026-11-04 사용자의 직접 전달**을 근거로 적용했다. 변경된 운영 공지 원문을 직접 확인한 것으로 표시하지 않는다. 재시험 날짜를 추정하거나 캡처·자료 반출·플랫폼 자동화까지 허용 범위를 넓히지 않는다.
+
+프로젝트 진입 스킬은 2026-11-04 확인한 [OpenAI 스킬 문서](https://learn.chatgpt.com/docs/build-skills)와 [AGENTS.md 탐색 문서](https://learn.chatgpt.com/docs/agent-configuration/agents-md)를 참고했다. 웹 검증은 [Playwright 기록 옵션](https://playwright.dev/docs/test-use-options)·[브라우저 컨텍스트](https://playwright.dev/docs/api/class-browsercontext)·[서비스 워커 제약](https://playwright.dev/docs/service-workers)을 참고했다. 이 문서는 현재 문서의 사용법 근거이며 제공된 고정 CLI·Playwright 버전의 호환성을 입증하지 않는다. 원본 문서·실행기·브라우저 바이너리는 포함하지 않았다.
+
 | 참고 자료 | 참고한 원칙 | 확인한 참조 | 이 패키지에서의 범위 |
 |---|---|---|---|
 | [Matt Pocock skills](https://github.com/mattpocock/skills) | 사실 확인과 사람의 판단 구분, 동작 경계 테스트 | [커밋](https://github.com/mattpocock/skills/tree/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa), MIT | 짧은 질문과 작은 검증 흐름. 원문의 무제한 인터뷰·외부 이슈 발행 없음 |

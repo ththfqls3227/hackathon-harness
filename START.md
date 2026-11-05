@@ -12,6 +12,7 @@
 | 업무 문제·핵심 질문·대안·최소 범위 | [task-scope](.agents/skills/task-scope/SKILL.md) |
 | 구현·검토·시간 배분·장애 후 재개 | [task-flow](.agents/skills/task-flow/SKILL.md) |
 | 작업 중 필수 문서 작성·기록에 근거한 이해 점검 | [task-understanding](.agents/skills/task-understanding/SKILL.md) |
+| 공개 원본 스킬·키트를 고정 버전으로 받아 사용 | [upstream-skills](.agents/skills/upstream-skills/SKILL.md) |
 | 요구사항·동작·제출 파일 검증 | [task-verify](.agents/skills/task-verify/SKILL.md) |
 | 현재 과제에서 허용된 자체 웹 Playwright 검증 | [web-verify](.agents/skills/web-verify/SKILL.md) |
 | 로컬 CSV 구조·결측 확인 | [data-check](.agents/skills/data-check/SKILL.md) |

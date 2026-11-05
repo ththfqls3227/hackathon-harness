@@ -1,6 +1,6 @@
 # Hackathon Harness
 
-문제 정의, 범위 선택, 구현, 검증과 작업 내용 이해를 짧게 연결하는 한국어 Codex 하네스입니다. 기본 스킬 4개와 선택 스킬 4개, 프로젝트 진입 스킬 등록 도구, 로컬 CSV 점검 도구를 제공합니다. MIT 라이선스이며 미리 만든 정답이나 특정 앱 템플릿은 포함하지 않습니다.
+문제 정의, 범위 선택, 구현, 검증과 작업 내용 이해를 짧게 연결하는 한국어 Codex 하네스입니다. 기본 스킬 4개와 선택 스킬 5개, 프로젝트 진입 스킬 등록 도구, 로컬 CSV 점검 도구를 제공합니다. MIT 라이선스이며 미리 만든 정답이나 특정 앱 템플릿은 포함하지 않습니다.
 
 실행기·MCP·전역 설정 설치 없이 문서를 읽어 시작합니다. 선택적인 프로젝트 스킬 등록과 CSV 도구는 Python 3.10+가 필요합니다(실행 검증: Python 3.11). 등록 도구는 macOS·Linux의 POSIX 파일 기능을 사용하며, 미지원 환경은 START.md 직접 읽기로 사용합니다. 역할 카드는 자동 등록되는 에이전트 설정이 아닙니다.
 
@@ -18,12 +18,12 @@
 
 제공된 Codex가 다운로드부터 진행하게 하려면 다음처럼 요청할 수 있습니다.
 
-> 공개 저장소 `https://github.com/ththfqls3227/hackathon-harness`의 `v0.5.1`을 실제 과제 폴더 안 `tools/hackathon-harness`에 clone해. 같은 폴더가 있으면 보존하고 먼저 확인해. 그 안의 `START.md`를 읽고 이 과제에 적용해. 환경에서 지원되면 `scripts/setup_project.py`로 프로젝트 진입 스킬도 등록하고, 지원되지 않으면 파일을 직접 읽는 방식으로 이어가.
+> 공개 저장소 `https://github.com/ththfqls3227/hackathon-harness`의 `v0.6.0`을 실제 과제 폴더 안 `tools/hackathon-harness`에 clone해. 같은 폴더가 있으면 보존하고 먼저 확인해. 그 안의 `START.md`를 읽고 이 과제에 적용해. 환경에서 지원되면 `scripts/setup_project.py`로 프로젝트 진입 스킬도 등록하고, 지원되지 않으면 파일을 직접 읽는 방식으로 이어가.
 
 과제 작업 폴더에서 공개 저장소 다운로드가 허용되는 경우:
 
 ```sh
-git clone --depth 1 --branch v0.5.1 https://github.com/ththfqls3227/hackathon-harness.git tools/hackathon-harness
+git clone --depth 1 --branch v0.6.0 https://github.com/ththfqls3227/hackathon-harness.git tools/hackathon-harness
 ```
 
 같은 이름의 폴더가 이미 있으면 내용을 덮어쓰지 않고 기존 자료를 먼저 확인합니다. 태그로 버전을 고정하며 시험 중 최신 버전으로 자동 업데이트하지 않습니다.
@@ -49,12 +49,24 @@ python3.11 tools/hackathon-harness/scripts/setup_project.py --project . --apply
 
 원본 스킬만 과제 폴더로 복사하면 내부 상대경로가 달라질 수 있어 진입 파일이 clone 안의 원본 문서를 읽습니다. clone 위치를 옮기면 연결도 다시 확인해야 합니다. 기존 진입 파일이 충돌하면 직접 읽기로 계속하며 자동 삭제·강제 업데이트는 하지 않습니다. 추가 파일이 제출 범위에 포함되는지도 실제 안내로 확인합니다. [공식 스킬 탐색 방식](https://learn.chatgpt.com/docs/build-skills).
 
+### 필요할 때 원본 공개 저장소 가져오기
+
+초기 clone에는 하네스의 다운로드 도구와 출처 목록만 들어 있으며, 참고한 원본 저장소 전체는 포함되지 않습니다. 실제 과제에서 특정 원본 자료가 필요하고 공개 다운로드가 허용될 때, 과제 폴더에서 `$hackathon-harness`에 “원본 Anatomy를 받아서 사용해”처럼 요청하거나 [upstream-skills](.agents/skills/upstream-skills/SKILL.md)를 읽습니다. 선택 가능한 이름은 `omx`, `codexclaw`, `anatomy`, `superpowers`, `ui-ux-pro-max`, `mattpocock`, `scientific`입니다.
+
+```sh
+python3.11 tools/hackathon-harness/scripts/fetch_upstream.py --project . --name anatomy
+python3.11 tools/hackathon-harness/scripts/fetch_upstream.py --project . --name anatomy --apply
+```
+
+첫 명령은 변경 없이 가져올 대상을 확인하고, 두 번째는 [SOURCES.md](SOURCES.md)의 고정 커밋에서 **실제 원본 파일**을 `tools/upstream/anatomy`에 내려받습니다. 다른 이름도 같은 형식으로 지정합니다. 대상 폴더가 이미 있으면 덮어쓰지 않습니다. 내려받은 저장소의 `LICENSE`와 원본 문서를 함께 확인한 뒤 필요한 파일을 읽어 사용합니다. 이 동작은 런타임·hooks·MCP·전역 설정을 설치하거나 Codex를 업데이트하지 않습니다. 원본 저장소별 기능이 제공 환경에서 모두 실행된다는 의미도 아닙니다. 원본을 가져오는 것은 필요할 때만 선택해 시간과 자원을 아낍니다.
+
 ## 구성
 
 | 파일 | 쓰임 |
 |---|---|
 | [AGENTS.md](AGENTS.md) | 작업 기준과 제약 |
 | [START.md](START.md) | 시작·재개와 필요한 스킬 선택 |
+| [upstream-skills](.agents/skills/upstream-skills/SKILL.md) | 공개 원본 7종을 고정 커밋으로 받아 실제 파일 사용 |
 | [setup_project.py](scripts/setup_project.py) | 프로젝트 전용 진입 스킬 1개 등록 |
 | [응시 규정 프로필](docs/exam-contract.md) | Codex·인증·도구 반입·자료 반출·수동 화면 확인·제출 단계의 기준 |
 | [task-scope](.agents/skills/task-scope/SKILL.md) | 실무 맥락, 성공 기준, 대안 비교와 범위 결정 |

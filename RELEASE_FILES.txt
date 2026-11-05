@@ -9,6 +9,7 @@ SOURCES.md
 .agents/skills/task-flow/SKILL.md
 .agents/skills/task-verify/SKILL.md
 .agents/skills/task-understanding/SKILL.md
+.agents/skills/upstream-skills/SKILL.md
 .agents/skills/web-verify/SKILL.md
 .agents/skills/data-check/SKILL.md
 .agents/skills/data-check/profile_csv.py
@@ -24,6 +25,7 @@ docs/codexclaw-review.md
 docs/validation.md
 scripts/check_package.py
 scripts/setup_project.py
+scripts/fetch_upstream.py
 tests/scenarios.md
 tests/with-skill-response.md
 tests/baseline-response.md

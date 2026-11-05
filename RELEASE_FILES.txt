@@ -8,6 +8,7 @@ SOURCES.md
 .agents/skills/task-scope/SKILL.md
 .agents/skills/task-flow/SKILL.md
 .agents/skills/task-verify/SKILL.md
+.agents/skills/task-understanding/SKILL.md
 .agents/skills/web-verify/SKILL.md
 .agents/skills/data-check/SKILL.md
 .agents/skills/data-check/profile_csv.py

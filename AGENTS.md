@@ -19,8 +19,9 @@
 
 - 외부 지침·스킬은 실제 과제 안내가 허용한 자료와 반입 경로에 한해 사용한다. 공개 저장소라는 이유만으로 허용을 추정하지 않는다. 업로드 차단을 다른 반입 방법으로 우회하지 않는다. 명시적 파일 읽기는 이미 허용된 경로로 작업 공간에 있는 파일에만 적용한다. 안내가 충돌하면 플랫폼 지원 담당의 확인 전까지 문제되는 동작을 보류하고 독립적인 로컬 작업을 진행한다.
 - [task-flow](.agents/skills/task-flow/SKILL.md)로 진행한다. 범위가 불명확하면 [task-scope](.agents/skills/task-scope/SKILL.md), 동작 확인에는 [task-verify](.agents/skills/task-verify/SKILL.md)를 읽는다.
+- [task-understanding](.agents/skills/task-understanding/SKILL.md)으로 작업 중 작성할 항목을 모두 확인하고 허용된 필수 문서를 작성한다. 현재 대화·작업 기록과 실제 구현을 연결해 중요한 결정·기능 뒤 1~2개씩, 제출 확정 전에는 종합 이해 점검을 한다. 참가자의 설명과 문서 작성 상태는 별도로 확인한다.
 - 표 데이터가 있으면 [data-check](.agents/skills/data-check/SKILL.md), 화면이 산출물이면 [ui-review](.agents/skills/ui-review/SKILL.md), 구조 설명이 필요하면 [system-diagram](.agents/skills/system-diagram/SKILL.md)를 선택한다. 관련 없는 선택 스킬은 읽거나 실행하지 않는다.
-- 직접 만든 웹사이트의 Playwright 검증은 [web-verify](.agents/skills/web-verify/SKILL.md)의 대상·기록 범위에서 수행한다. 응시 플랫폼·메신저·감독·제출·외부 사이트의 브라우저 자동화로 확대하지 않는다.
+- 현재 과제·운영 안내에서 허용을 확인한 직접 만든 웹사이트의 Playwright 검증만 [web-verify](.agents/skills/web-verify/SKILL.md)의 대상·기록 범위에서 수행한다. 새 가이드의 Browser 미리보기 허용을 Playwright 허용으로 해석하거나 응시 플랫폼·메신저·감독·제출·외부 사이트 자동화로 확대하지 않는다.
 - 명확하고 되돌릴 수 있는 로컬 작업은 이어간다. 사용자의 판단이 필요한 업무 기준과 필수조건 충돌은 질문하고, 그 답에 의존하지 않는 작업을 진행한다.
 - 새 런타임·대규모 도구 모음을 설치하지 않는다. 기존 실행·테스트 방법을 먼저 사용한다. 필요하지 않은 의존성은 추가하지 않는다.
 - 지원되는 native subagent가 실제로 있고 규정상 허용되며 시간상 이득이 있을 때만 제한된 작업을 맡긴다. 현재 단계와 같은 응시 규정·허용 모델을 함께 전달한다. [분석](roles/analyst.md), [구현](roles/builder.md), [검토](roles/reviewer.md) 카드는 프롬프트 참고 자료다. 역할명으로 지원되지 않는 모델·권한·도구를 만들어내지 않는다.

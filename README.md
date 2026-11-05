@@ -18,12 +18,12 @@
 
 제공된 Codex가 다운로드부터 진행하게 하려면 다음처럼 요청할 수 있습니다.
 
-> 공개 저장소 `https://github.com/ththfqls3227/hackathon-harness`의 `v0.5.0`을 실제 과제 폴더 안 `tools/hackathon-harness`에 clone해. 같은 폴더가 있으면 보존하고 먼저 확인해. 그 안의 `START.md`를 읽고 이 과제에 적용해. 환경에서 지원되면 `scripts/setup_project.py`로 프로젝트 진입 스킬도 등록하고, 지원되지 않으면 파일을 직접 읽는 방식으로 이어가.
+> 공개 저장소 `https://github.com/ththfqls3227/hackathon-harness`의 `v0.5.1`을 실제 과제 폴더 안 `tools/hackathon-harness`에 clone해. 같은 폴더가 있으면 보존하고 먼저 확인해. 그 안의 `START.md`를 읽고 이 과제에 적용해. 환경에서 지원되면 `scripts/setup_project.py`로 프로젝트 진입 스킬도 등록하고, 지원되지 않으면 파일을 직접 읽는 방식으로 이어가.
 
 과제 작업 폴더에서 공개 저장소 다운로드가 허용되는 경우:
 
 ```sh
-git clone --depth 1 --branch v0.5.0 https://github.com/ththfqls3227/hackathon-harness.git tools/hackathon-harness
+git clone --depth 1 --branch v0.5.1 https://github.com/ththfqls3227/hackathon-harness.git tools/hackathon-harness
 ```
 
 같은 이름의 폴더가 이미 있으면 내용을 덮어쓰지 않고 기존 자료를 먼저 확인합니다. 태그로 버전을 고정하며 시험 중 최신 버전으로 자동 업데이트하지 않습니다.
@@ -84,6 +84,8 @@ v0.4.0은 프로젝트 진입 스킬·START.md·자체 웹 Playwright 검증·�
 v0.5.0은 [task-understanding](.agents/skills/task-understanding/SKILL.md)을 더해 실제 과제 지침과 허용된 화면 텍스트에서 작업 단계의 모든 필수 서술 산출물을 찾고, 실제 코드·테스트에 근거해 작성하도록 안내합니다. 주요 결정·기능 뒤에는 1~2개씩, 제출 전에는 우선순위 높은 질문 3~5개를 기본으로 참가자가 먼저 설명하게 합니다. 후속 문항·점수를 예측하거나 답안을 미리 만들지 않으며 제출물 확정 뒤에는 AI 작업을 중단합니다. 재시험의 최신 가이드 일정과 운영 조건도 [응시 규정](docs/exam-contract.md)에 반영했습니다.
 
 ## 선택 기능 사용
+
+v0.5.1은 문제·방법·실제 구현의 연결과 AI 제안에 대한 참가자의 판단·변경·검증을 더 명확히 점검합니다. 판단 기록이 없으면 허용된 개발 단계에서 지금 함께 검토하고 실제 선택·수정 또는 유지 이유를 새로 남깁니다. 수행하지 않은 과거 판단이나 사람의 기여를 만들어 쓰지 않습니다.
 
 START.md에서 task-flow로 시작하고, 실제 과제에 맞는 스킬만 추가로 읽습니다.
 
